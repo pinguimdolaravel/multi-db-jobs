@@ -26,6 +26,8 @@ class SaveUserJob implements ShouldQueue
     {
 //        Config::set('database.default', $this->db);
 
+
+
         User::on($this->db)->create([
                 'name' => $this->name,
                 'email' => $this->email,

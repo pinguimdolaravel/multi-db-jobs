@@ -18,5 +18,8 @@ class MigrateCommand extends Command
 
         info('Running migrations on connection "jeremias"');
         $this->call('migrate', [ '--database' => 'jeremias']);
+
+        info('Running migrations on connection "jetete"');
+        $this->call('migrate', [ '--database' => 'jetete']);
     }
 }
